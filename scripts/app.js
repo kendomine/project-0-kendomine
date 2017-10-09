@@ -19,11 +19,12 @@ $(function() {
     $reset.removeClass('tmp-hidden');
   };
 
-//Count down function
-
-  function countdown() {
+//Count down function. (Still need to make this Jquery)
   var seconds;
   var temp;
+
+  function countdown() {
+
     seconds = document.getElementById('countdown').innerHTML;
     seconds = parseInt(seconds, 10);
  
@@ -51,25 +52,6 @@ document.onkeydown = function (e) {
         clicked();
     }
 };
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
   // Basic movement of characters through keypress

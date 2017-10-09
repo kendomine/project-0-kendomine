@@ -54,4 +54,6 @@ height: 80px;
  	text-align: center;
  	font-size: 30px;
 
-
+  p {
+	text-align: justify;
+}
