@@ -1,8 +1,8 @@
+
 body {
     background-image: url("background.png");
       background-size:cover;
 	font-family: 'Press Start 2P', cursive;
-}
 }
 h1 {
   margin: 0 10px;
@@ -16,17 +16,14 @@ h1 {
   vertical-align: top;
 }
 .player {
-  background-color: #white;
-  border-radius: 50px;
-  font-size: 40px;
-  height: 80px;
+height: 80px;
   line-height: 1;
-  margin: 10px 0;
-  padding: 18px 0;
+  margin: 5px 0;
+  padding: 5px 0;
   position: relative;
   text-align: center;
   text-transform: uppercase;
-  width: 80px;
+  width: 60px;
 }
 .btn-reset, .btn-reset:focus {
   background-color: #f2183d;
@@ -51,9 +48,7 @@ h1 {
   height: 200px;
   padding: 5px 0;
   width: 100%;
-  border: 5px dotted white;;
-}x
-.container-fluid{
-
+  border: 5px dotted white;
 }
+.container-fluid{
 
