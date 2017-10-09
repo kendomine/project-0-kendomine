@@ -2,18 +2,75 @@ $(function() {
 
   $reset = $('#reset');
   var winner = null;
+ 
 
   // reset to beginning
   var rematch = function() {
     $reset.addClass('tmp-hidden');
     $('.player').css({left: 0});
     winner = null;
+    temp.innerHTML=5;
+    countdown();
+
   };
 
  //Show rematch button at the end of the race.
   var executeWin = function() {
     $reset.removeClass('tmp-hidden');
   };
+
+//Count down function
+
+  function countdown() {
+  var seconds;
+  var temp;
+    seconds = document.getElementById('countdown').innerHTML;
+    seconds = parseInt(seconds, 10);
+ 
+    if (seconds == 1) {
+      temp = document.getElementById('countdown');
+      temp.innerHTML = "GO!";
+      return;
+
+    }
+ 
+    seconds--;
+    temp = document.getElementById('countdown');
+    temp.innerHTML = seconds;
+    whar = setTimeout(countdown, 1000);
+  } 
+ 
+
+function clicked () {
+    countdown();
+}
+document.onkeydown = function (e) {
+    var keyCode = e.keyCode;
+    if(keyCode == 66) {
+
+        clicked();
+    }
+};
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
   // Basic movement of characters through keypress
   var movePlayer = function(keypressEvent) {
@@ -49,6 +106,7 @@ $(function() {
     });
   };
 
+  // start the race!
   race();
 
 });

@@ -50,5 +50,8 @@ height: 80px;
   width: 100%;
   border: 5px dotted white;
 }
-.container-fluid{
+ #countdown {
+ 	text-align: center;
+ 	font-size: 30px;
+
 
